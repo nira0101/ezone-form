@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EZONE | Join the Community of ESPORTS Athletes</title>
+  </head>
+  <body>
+    <section id="landing-page">
+      <button id="join-button">Join Us</button>
+    </section>
+    <section id="sign-up-form" class="hidden">
+      <article class="form-screen" id="form-one">
+        <input id="close-1" type="button" class="close" value="✕" />
+        <div id="progress-bar">
+          <h2 class="fill">1</h2>
+          <div class="line"></div>
+          <h2>2</h2>
+          <div class="line"></div>
+          <h2>✔</h2>
+        </div>
+        <h1>Personal Info</h1>
+        <form id="form-1">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <span class="hint">What's your name?</span>
+            <input id="name" type="text" name="name" required />
+            <span id="error-1" class="error hidden">Name is required. Please, enter your name.</span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <span class="hint">What's your email adress?</span>
+            <input id="email" type="email" name="email" placeholder="someone@mail.com" required />
+            <span id="error-2" class="error hidden">Email is required. Please, enter a valid email address.</span>
+          </div>
+          <div class="form-group">
+            <label for="age">Age</label>
+            <span class="hint">Please state your age</span>
+            <input id="age" type="number" name="age" />
+           
+          </div>
+
+          <div class="form-group">
+            <label for="country">Country</label>
+            <span class="hint">Where are you from?</span>
+            <select id="region" name="region">
+              <option value="">Please select your region</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Sweden">Sweden</option>
+              <option value="Norway">Norway</option>
+            </select>
+          </div>
+          <input id="next" type="button" class="next hidden" value="Next"/>
+        </form>
+      </article>
+      <article class="form-screen hidden" id="form-two">
+        <input id="close-2" type="button" class="close" value="✕" />
+        <button id="back" class="back"><a>Back</a></button>
+        <div id="progress-bar">
+          <h2 id="previous">1</h2>
+          <div class="line"></div>
+          <h2 class="fill">2</h2>
+          <div class="line"></div>
+          <h2>✔</h2>
+        </div>
+        <form id="form-2">
+          <h1>Gaming info</h1>
+          <h3>Please pick a genre</h3>
+          <ul class="categories2">
+            <li class="cat-item">
+              <input type="checkbox" id="fps" value="fps" name="genre" />
+              <label>fps</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="mmorpg" value="mmorpg" name="genre" />
+              <label>MMORPG</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="sports" value="sports" name="genre" />
+              <label>Sports</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="racing" value="racing" name="genre" />
+              <label>Racing</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="tower defense" value="tower defense" name="genre" />
+              <label>Tower defense</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="rts" value="rts" name="genre" />
+              <label>RTS</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="simulation" value="simulation" name="genre" />
+              <label>Simulation</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="role-playing" value="role-playing" name="genre" />
+              <label>Role playing</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="adventure" value="adventure" name="genre" />
+              <label>Adventure</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="survival" value="survival" name="genre" />
+              <label>Survival</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="fighting" value="fighting" name="genre" />
+              <label>Fighting</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="battle-royale" value="battle-royale" name="genre" />
+              <label>Battle royale</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="rhythm" value="rhythm" name="genre" />
+              <label>Rhythm</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="platform" value="platform" name="genre" />
+              <label>Platform</label>
+            </li>
+          </ul>
+
+          <h3>What games do you play?</h3>
+          <ul class="categories3">
+            <li class="cat-item">
+              <input type="checkbox" id="csgo" value="csgo" name="games" />
+              <label>CS:GO</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="tekken" value="tekken" name="games" />
+              <label>Tekken</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="fifa" value="fifa" name="games" />
+              <label>FIFA</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="super-mario" value="super-mario" name="games" />
+              <label>Super Mario</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="fortnite" value="fortnite" name="games" />
+              <label>Fortnite</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="cod" value="cod" name="games" />
+              <label>COD</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="the-sims" value="the-sims" name="games" />
+              <label>The Sims</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="mortal-kombat" value="mortal-kombat" name="games" />
+              <label>Mortal Combat</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="guitar-hero" value="guitar-hero" name="games" />
+              <label>Guitar hero</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="wwc" value="wwc" name="games" />
+              <label>World of warcraft</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="skyrim" value="skyrim" name="games" />
+              <label>Skyrim</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="startcraft" value="startcraft" name="games" />
+              <label>Startcraft</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="warcraft" value="warcraft" name="games" />
+              <label>Warcraft</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="league-of-legend" value="league-of-legend" name="games" />
+              <label>League of legend</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="dota" value="dota" name="games" />
+              <label>DOTA</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="valorant" value="valorant" name="games" />
+              <label>Valorant</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="lfd" value="lfd" name="games" />
+              <label>Left for dead</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="overwatch" value="overwatch" name="games" />
+              <label>Overwatch</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="pubg" value="pubg" name="games" />
+              <label>PUBG</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="diablo" value="diablo" name="games" />
+              <label>Diablo</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="minecraft" value="minecraft" name="games" />
+              <label>Minecraft</label>
+            </li>
+          </ul>
+
+          
+        <h3>We cover different areas of game.Please choose the area you are interested in.</h3>
+        <h3></h3>
+          <ul class="categories">
+            <li class="cat-item">
+              <input type="checkbox" id="injuries" value="injuries" name="interests" />
+              <label>Injuries</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="nutrition" value="nutrition" name="interests" />
+              <label>Nutrition</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="hearing" value="hearing" name="interests" />
+              <label>Hearing</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="mindset" value="mindset" name="interests" />
+              <label>Mindset</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="technology" value="technology" name="interests" />
+              <label>Technology</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="training" value="training" name="interests" />
+              <label>Training</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="psychology" value="psychology" name="interests" />
+              <label>Psychology</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="sleep" value="sleep" name="interests" />
+              <label>Sleep</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="vision" value="vision" name="interests" />
+              <label>Vision</label>
+            </li>
+            <li class="cat-item">
+              <input type="checkbox" id="stress" value="stress" name="interests" />
+              <label>Stress</label>
+            </li>
+          </ul>
+          
+          <input type="submit" id="submit" value="Submit" class="hidden"/>
+        </form>
+      </article>
+      <article class="form-screen hidden" id="form-three">
+        <input id="close-3" type="button" class="close" value="✕" />
+        <div id="progress-bar">
+          <h2>1</h2>
+          <div class="line"></div>
+          <h2>2</h2>
+          <div class="line"></div>
+          <h2 id="done">✔</h2>
+        </div>
+        <h2>Thanks for signing up.</h2>
+        <p>
+          Be ready to improve your gaming skills.<br><br>
+          Enjoy and happy gaming!
+           </p>
+      </article>
+    </section>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
